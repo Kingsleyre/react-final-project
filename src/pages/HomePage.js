@@ -8,6 +8,7 @@ import WorkExperience from '../components/WorkExperience';
 export default function HomePage(){
   return (
     <>
+    <div className="custom-bg">
       <Header/>
       <div className="container">
         <div className="row">
@@ -21,6 +22,7 @@ export default function HomePage(){
         </div>
       </div>
       <Footer/>
+      </div>
     </>
   );
 }
