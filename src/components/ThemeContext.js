@@ -1,7 +1,5 @@
-// ThemeContext.js
 import React from 'react';
 
-// Create a new context with initial theme state
 const ThemeContext = React.createContext({
     theme: 'light',
     toggleTheme: () => null,

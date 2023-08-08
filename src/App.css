@@ -1,7 +1,9 @@
-#header{
-  background-color: rgb(227, 226, 226);
-}
-
 .custom-bg {
   background-color: rgb(218, 221, 222); /* Set your desired background color here */
+}
+
+.dark-mode {
+  background-color: black; 
+  color: white; 
+
 }

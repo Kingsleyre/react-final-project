@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../components/ThemeContext';
+
 
 function TechSummary (){
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
-     <div class="row mt-3">
+     <div class="row mt-3 ">
             <div class="col-md mb-5">
-                <div class="card bg-light">
-                    <div class="card-body">
-                        <h2 class="card-title">Technology Summary</h2>
+            <div className={`card ${theme === 'dark' ? 'bg-dark' : 'bg-light'}`}>
+      <div className={`card-body ${theme === 'dark' ? 'text-white' : 'text-dark'}`}>
+            <h2 className={`card-title ${theme === 'dark' ? 'text-white' : 'text-dark'}`}>Tech Summary</h2>
                         <ul class="list-unstyled">
                             <li>
                                 <h6 class="fw-bold">Senior Web Developer / Digital Agency 2016-2020</h6>

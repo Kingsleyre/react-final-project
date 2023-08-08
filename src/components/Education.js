@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../components/ThemeContext';
+
 
 function Education (){
+  const { theme } = useContext(ThemeContext);
   return (
     <>
-       <div class="row mt-3">
+       <div class="row mt-3 ">
       <div class="col-md">
-                <div class="card bg-light">
-                    <div class="card-body">
-                        <h2 class="card-title">Education</h2>
+      <div className={`card ${theme === 'dark' ? 'bg-dark' : 'bg-light'}`}>
+      <div className={`card-body ${theme === 'dark' ? 'text-white' : 'text-dark'}`}>
+            <h2 className={`card-title ${theme === 'dark' ? 'text-white' : 'text-dark'}`}>Education</h2>
                         <ul class="list-unstyled">
                             <li>
                                 <h6 class="fw-bold">Computer Science / University Name 2001-2004</h6>
